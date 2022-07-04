@@ -16,22 +16,29 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
-          backgroundColor: Colors.deepPurple,
-          appBar: AppBar(
-            backgroundColor: Colors.yellow,
-            title: Text(
-              'Prawda czy fałsz',
-              style: GoogleFonts.aladin(
-                fontSize: 35,
-                letterSpacing: 9,
-                color: Colors.brown,
-                backgroundColor: Colors.yellow,
-              ),
+        backgroundColor: Colors.deepPurple,
+        appBar: AppBar(
+          backgroundColor: Colors.yellow,
+          title: Text(
+            'Prawda czy fałsz',
+            style: GoogleFonts.aladin(
+              fontSize: 35,
+              letterSpacing: 9,
+              color: Colors.brown,
+              backgroundColor: Colors.yellow,
             ),
           ),
-          body: Center(
-            child: Column(),
-          )),
+        ),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: const [
+              CircleAvatar(
+                  backgroundImage: AssetImage('images/Jinn.jpeg'), radius: 160),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
