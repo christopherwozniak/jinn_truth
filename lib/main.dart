@@ -16,19 +16,22 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
-        backgroundColor: Colors.deepPurple,
-        appBar: AppBar(
-          backgroundColor: Colors.yellow,
-          title: Text(
-            'Spytaj Dzinna ona prawdę Ci powie',
-            style: GoogleFonts.aladin(
-              fontSize: 35,
-              letterSpacing: 9,
-              backgroundColor: Colors.brown,
+          backgroundColor: Colors.deepPurple,
+          appBar: AppBar(
+            backgroundColor: Colors.yellow,
+            title: Text(
+              'Prawda czy fałsz',
+              style: GoogleFonts.aladin(
+                fontSize: 35,
+                letterSpacing: 9,
+                color: Colors.brown,
+                backgroundColor: Colors.yellow,
+              ),
             ),
           ),
-        ),
-      ),
+          body: Center(
+            child: Column(),
+          )),
     );
   }
 }
