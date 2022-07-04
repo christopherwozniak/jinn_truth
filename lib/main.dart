@@ -32,9 +32,30 @@ class MyApp extends StatelessWidget {
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
-              CircleAvatar(
+            children: [
+              const CircleAvatar(
                   backgroundImage: AssetImage('images/Jinn.jpeg'), radius: 160),
+              const SizedBox(
+                height: 80,
+              ),
+              Text('Czy to jest prawda, czy to jest klamstwo?',
+                  style: GoogleFonts.aladin(
+                    backgroundColor: Colors.amber,
+                    fontSize: 20,
+                  )),
+              const SizedBox(
+                height: 10,
+              ),
+              Text(
+                'Zapytaj Dzina on Ci odpowie.',
+                style: GoogleFonts.aladin(
+                  backgroundColor: Colors.amber,
+                  fontSize: 20,
+                ),
+              ),
+              const SizedBox(
+                height: 30,
+              ),
             ],
           ),
         ),
